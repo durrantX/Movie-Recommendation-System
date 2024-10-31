@@ -39,8 +39,7 @@ The event coordinator needs to provide top 5 personalized movie recommendations 
 
 
   **Rating Distribution**  
-![png](output_9_0.png)
-
+![image](https://github.com/user-attachments/assets/a8a20a4a-6560-4521-bb50-46e6d45d60f2)
 
 Rating are either implicit or explicit. 
 Explicit ratings/feedback occurs when users directly rates the item.
@@ -49,9 +48,7 @@ Explicit rating is on a scale 0-5.
 The data distributed indicates a positive ratings of movies  are more common. These higher ratings suggest that users are generally satisfied with the  movies. There may be a positive bias in the ratings. The data distibution and business task may influence the model's performance. 
 
 **Ratings Percentage Distribution**  
-![png](output_12_0.png)
-
-    
+![image](https://github.com/user-attachments/assets/4715a434-c75a-4f25-8c77-66c961e5c9db)
 Percentage distribution of ratings skews toward higher ratings, which could be an indication of positive bias.
 * Ratings 4.0 and above: The combined percentage for ratings 4.0, 4.5, and 5.0 is about 48.17%. 4.0 (26.60%),
 * Ratingd 3.0 to 3.5:  Makes  up 32.91% of the ratings 
@@ -65,7 +62,8 @@ To address the issue the following strategies can be used .
 
 **Distribution of ratings across users** 
 To understand the distribution of the number of ratings across many users the histogram will be used 
-![png](output_16_0.png)
+![image](https://github.com/user-attachments/assets/91cca7e0-f734-4989-aee2-cb0d960445ea)
+
 * The majority of users fall into the first bin, suggesting that many users might have rated few movies. This suggest low engagement in terms of ratings. 
 * Users  rating fewer items  leads to sparse datasets. 
 * There are fewer users with high rating engagements which could have a significant impact on the recommendation model. 
@@ -122,7 +120,8 @@ To address the business problem, the recommendation system was designed to:
     +------+-----------------------------------------------------------------------------------------------------------------------------+-----------+
     |userId|title                                                                                                                        |pred_rating|
     +------+-----------------------------------------------------------------------------------------------------------------------------+-----------+
-    |1     |Dragon Ball Z: The History of Trunks (Doragon bôru Z: Zetsubô e no hankô!! Nokosareta chô senshi - Gohan to Torankusu) (1993)|5.0        |
+    |1     |Dragon Ball Z: The History of Trunks 
+                                               (Doragon bôru Z: Zetsubô e no hankô!! Nokosareta chô senshi - Gohan to Torankusu) (1993)   |5.0        |
     |1     |On the Beach (1959)                                                                                                          |5.0        |
     |1     |Seve (2014)                                                                                                                  |5.0        |
     |1     |Deathgasm (2015)                                                                                                             |5.0        |
