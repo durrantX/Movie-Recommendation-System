@@ -221,7 +221,7 @@ These metrics indicate that the recommendation system is highly effective at pre
 
 
 |userId|title                             |pred_rating|
-/------/----------------------------------/-----------/
++------+----------------------------------+-----------+
 |53    |Dracula: Dead and Loving It (1995)|3.548811   |
 |558   |Dracula: Dead and Loving It (1995)|3.3245075  |
 |327   |Dracula: Dead and Loving It (1995)|3.2381494  |
@@ -255,13 +255,13 @@ To offer insights into the model's performance, personalized recommendations wil
 `
 
    
-    |userId|title                                                                                                                        |genres                    |pred_rating|
-    +------+-----------------------------------------------------------------------------------------------------------------------------+--------------------------+-----------+
-    |54    |Dragon Ball Z: The History of Trunks  (1993)|Action|Adventure|Animation|4.0924816  |
-    |54    |On the Beach (1959)                                                                                                          |Drama                     |4.0924816  |
-    |54    |Seve (2014)                                                                                                                  |Documentary|Drama         |4.00343    |
-    |54    |Deathgasm (2015)                                                                                                             |Comedy|Horror             |3.9777083  |
-    |54    |Saving Face (2004)                                                                                                           |Comedy|Drama|Romance      |3.9490638  |
+    |userId|title                                              |genres                    |pred_rating|
+    +------+---------------------------------------------------+--------------------------+-----------+
+    |54    |Dragon Ball Z: The History of Trunks  (1993)       |Action|Adventure|Animation|  4.0924816  |
+    |54    |On the Beach (1959)                                |Drama                     |4.0924816  |
+    |54    |Seve (2014)                                        |Documentary|Drama         |4.00343    |
+    |54    |Deathgasm (2015)                                   |Comedy|Horror            |3.9777083  |
+    |54    |Saving Face (2004)                                |Comedy|Drama|Romance      |3.9490638  |
     
     only showing top 5 rows
     
