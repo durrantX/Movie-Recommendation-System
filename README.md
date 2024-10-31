@@ -147,7 +147,7 @@ In addition to RMSE, the Precision@K evaluation metric will be used to assess th
 
 
 # Top 5 Users Recommendations for Each Movie
-+------+----------------------------------+-----------+
+
 |userId|title                             |pred_rating|
 +------+----------------------------------+-----------+
 |53    |Dracula: Dead and Loving It (1995)|3.548811   |
@@ -177,16 +177,15 @@ To demonstrate that the recommendation system functions recommendations to a dis
 * Calculate accuracy and Precicion@K
 
 
-    +------+-------------------------------------------------------------------------------------------+-----------+
-    |userId|title                                                                                      |pred_rating|
-    +------+-------------------------------------------------------------------------------------------+-----------+
+    |userId|title                                                                           |pred_rating|
+    +------+--------------------------------------------------------------------------------+-----------+
     |540   |Dragon Ball Z: The History of Trunks 
-    (Doragon bôru Z: Zetsubô e no hankô!! Nokosareta chô senshi - Gohan to Torankusu) (1993)|5.0        |
-    |540   |On the Beach (1959)                                                                         |5.0        |
-    |540   |Frozen River (2008)                                                                         |5.0        |
-    |540   |Visitor, The (2007)                                                                         |5.0        |
-    |540   |Deathgasm (2015)                                                                            |5.0        |
-    +------+--------------------------------------------------------------------------------------------------------+-----------+
+    (Doragon bôru Z: Zetsubô e no hankô!! Nokosareta chô senshi - Gohan to Torankusu) (1993) |5.0        |
+    |540   |On the Beach (1959)                                                               |5.0        |
+    |540   |Frozen River (2008)                                                               |5.0        |
+    |540   |Visitor, The (2007)                                                               |5.0        |
+    |540   |Deathgasm (2015)                                                                  |5.0        |
+    
     only showing top 5 rows
     
 
@@ -220,7 +219,7 @@ These metrics indicate that the recommendation system is highly effective at pre
     
 # Evaluation: Recommend 5 Distinct Movies to 5 Users
 
-+------+----------------------------------+-----------+
+
 |userId|title                             |pred_rating|
 +------+----------------------------------+-----------+
 |53    |Dracula: Dead and Loving It (1995)|3.548811   |
@@ -228,7 +227,7 @@ These metrics indicate that the recommendation system is highly effective at pre
 |327   |Dracula: Dead and Loving It (1995)|3.2381494  |
 |371   |Dracula: Dead and Loving It (1995)|3.0953596  |
 |276   |Dracula: Dead and Loving It (1995)|3.0835876  |
-+------+----------------------------------+-----------+
+
 only showing top 5 rows
 
 
@@ -255,7 +254,7 @@ To offer insights into the model's performance, personalized recommendations wil
     
 `
 
-    +------+-----------------------------------------------------------------------------------------------------------------------------+--------------------------+-----------+
+   
     |userId|title                                                                                                                        |genres                    |pred_rating|
     +------+-----------------------------------------------------------------------------------------------------------------------------+--------------------------+-----------+
     |54    |Dragon Ball Z: The History of Trunks 
@@ -264,7 +263,7 @@ To offer insights into the model's performance, personalized recommendations wil
     |54    |Seve (2014)                                                                                                                  |Documentary|Drama         |4.00343    |
     |54    |Deathgasm (2015)                                                                                                             |Comedy|Horror             |3.9777083  |
     |54    |Saving Face (2004)                                                                                                           |Comedy|Drama|Romance      |3.9490638  |
-    +------+-----------------------------------------------------------------------------------------------------------------------------+--------------------------+-----------+
+    
     only showing top 5 rows
     
      
