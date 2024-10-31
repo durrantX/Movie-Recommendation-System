@@ -117,16 +117,16 @@ To address the business problem, the recommendation system was designed to:
 
  **Top 5 Recommended Movies for Each Users**
 
-    +------+-----------------------------------------------------------------------------------------------------+-----------+
-    |userId|title                                                                                                |pred_rating|
-    +------+-----------------------------------------------------------------------------------------------------+-----------+
+    +------+------------------------------------------------------------------------------------------+-----------+
+    |userId|title                                                                                     |pred_rating|
+    +------+------------------------------------------------------------------------------------------+-----------+
     |1     |Dragon Ball Z: The History of Trunks 
-             (Doragon bôru Z: Zetsubô e no hankô!! Nokosareta chô senshi - Gohan to Torankusu) (1993)             |5.0        |
-    |1     |On the Beach (1959)                                                                                   |5.0        |
-    |1     |Seve (2014)                                                                                           |5.0        |
-    |1     |Deathgasm (2015)                                                                                      |5.0        |
-    |1     |Frozen River (2008)                                                                                   |5.0        |
-    +------+-------------------------------------------------------------------------------------------------------+-----------+
+             (Doragon bôru Z: Zetsubô e no hankô!! Nokosareta chô senshi - Gohan to Torankusu) (1993) |5.0        |
+    |1     |On the Beach (1959)                                                                       |5.0        |
+    |1     |Seve (2014)                                                                               |5.0        |
+    |1     |Deathgasm (2015)                                                                          |5.0        |
+    |1     |Frozen River (2008)                                                                       |5.0        |
+    +------+------------------------------------------------------------------------------------------+-----------+
     only showing top 5 rows
     
     
@@ -149,13 +149,13 @@ In addition to RMSE, the Precision@K evaluation metric will be used to assess th
 # Top 5 Users Recommendations for Each Movie
 
 |userId|title                             |pred_rating|
-+------+----------------------------------+-----------+
++----------------------------------------+-----------+
 |53    |Dracula: Dead and Loving It (1995)|3.548811   |
 |558   |Dracula: Dead and Loving It (1995)|3.3245075  |
 |327   |Dracula: Dead and Loving It (1995)|3.2381494  |
 |371   |Dracula: Dead and Loving It (1995)|3.0953596  |
 |276   |Dracula: Dead and Loving It (1995)|3.0835876  |
-+------+----------------------------------+-----------+
+
 only showing top 5 rows
 
 **Model Predicted Ratings and Evaluation for Top 5 Users per Movie**
@@ -221,7 +221,7 @@ These metrics indicate that the recommendation system is highly effective at pre
 
 
 |userId|title                             |pred_rating|
-+------+----------------------------------+-----------+
+/------/----------------------------------/-----------/
 |53    |Dracula: Dead and Loving It (1995)|3.548811   |
 |558   |Dracula: Dead and Loving It (1995)|3.3245075  |
 |327   |Dracula: Dead and Loving It (1995)|3.2381494  |
@@ -257,8 +257,7 @@ To offer insights into the model's performance, personalized recommendations wil
    
     |userId|title                                                                                                                        |genres                    |pred_rating|
     +------+-----------------------------------------------------------------------------------------------------------------------------+--------------------------+-----------+
-    |54    |Dragon Ball Z: The History of Trunks 
-    (Doragon bôru Z: Zetsubô e no hankô!! Nokosareta chô senshi - Gohan to Torankusu) (1993)|Action|Adventure|Animation|4.0924816  |
+    |54    |Dragon Ball Z: The History of Trunks  (1993)|Action|Adventure|Animation|4.0924816  |
     |54    |On the Beach (1959)                                                                                                          |Drama                     |4.0924816  |
     |54    |Seve (2014)                                                                                                                  |Documentary|Drama         |4.00343    |
     |54    |Deathgasm (2015)                                                                                                             |Comedy|Horror             |3.9777083  |
