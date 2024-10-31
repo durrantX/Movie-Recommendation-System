@@ -39,8 +39,7 @@ The event coordinator needs to provide top 5 personalized movie recommendations 
 
 
   **Rating Distribution**  
-![png](output_9_0.png)
-
+![image](https://github.com/user-attachments/assets/a8a20a4a-6560-4521-bb50-46e6d45d60f2)
 
 Rating are either implicit or explicit. 
 Explicit ratings/feedback occurs when users directly rates the item.
@@ -49,9 +48,7 @@ Explicit rating is on a scale 0-5.
 The data distributed indicates a positive ratings of movies  are more common. These higher ratings suggest that users are generally satisfied with the  movies. There may be a positive bias in the ratings. The data distibution and business task may influence the model's performance. 
 
 **Ratings Percentage Distribution**  
-![png](output_12_0.png)
-
-    
+![image](https://github.com/user-attachments/assets/4715a434-c75a-4f25-8c77-66c961e5c9db)
 Percentage distribution of ratings skews toward higher ratings, which could be an indication of positive bias.
 * Ratings 4.0 and above: The combined percentage for ratings 4.0, 4.5, and 5.0 is about 48.17%. 4.0 (26.60%),
 * Ratingd 3.0 to 3.5:  Makes  up 32.91% of the ratings 
@@ -65,7 +62,8 @@ To address the issue the following strategies can be used .
 
 **Distribution of ratings across users** 
 To understand the distribution of the number of ratings across many users the histogram will be used 
-![png](output_16_0.png)
+![image](https://github.com/user-attachments/assets/91cca7e0-f734-4989-aee2-cb0d960445ea)
+
 * The majority of users fall into the first bin, suggesting that many users might have rated few movies. This suggest low engagement in terms of ratings. 
 * Users  rating fewer items  leads to sparse datasets. 
 * There are fewer users with high rating engagements which could have a significant impact on the recommendation model. 
@@ -143,14 +141,15 @@ In addition to RMSE, the Precision@K evaluation metric will be used to assess th
 
 
 # Top 5 Users Recommendations for Each Movie
-| userId | title                             | pred_rating |
-|--------|-----------------------------------|-------------|
-| 53     | Dracula: Dead and Loving It (1995)| 3.548811    |
-| 558    | Dracula: Dead and Loving It (1995)| 3.3245075   |
-| 327    | Dracula: Dead and Loving It (1995)| 3.2381494   |
-| 371    | Dracula: Dead and Loving It (1995)| 3.0953596 
-
-
++------+----------------------------------+-----------+
+|userId|title                             |pred_rating|
++------+----------------------------------+-----------+
+|53    |Dracula: Dead and Loving It (1995)|3.548811   |
+|558   |Dracula: Dead and Loving It (1995)|3.3245075  |
+|327   |Dracula: Dead and Loving It (1995)|3.2381494  |
+|371   |Dracula: Dead and Loving It (1995)|3.0953596  |
+|276   |Dracula: Dead and Loving It (1995)|3.0835876  |
++------+----------------------------------+-----------+
 only showing top 5 rows
 
 **Model Predicted Ratings and Evaluation for Top 5 Users per Movie**
@@ -170,24 +169,31 @@ To demonstrate that the recommendation system functions recommendations to a dis
 * Select a random distinct set of users (20)
 * Recommend 5 movies to each user
 * Calculate accuracy and Precicion@K
-| userId | title                                                                                                                        | pred_rating |
-|--------|------------------------------------------------------------------------------------------------------------------------------|-------------|
-| 540    | Dragon Ball Z: The History of Trunks (Doragon bôru Z: Zetsubô e no hankô!! Nokosareta chô senshi - Gohan to Torankusu) (1993) | 5.0         |
-| 540    | On the Beach (1959)                                                                                                          | 5.0         |
-| 540    | Frozen River (2008)                                                                                                          | 5.0         |
-| 540    | Visitor, The (2007)                                                                                                          | 5.0         |
-| 540    | Deathgasm (2015)                                                                                                             | 5.0         |
+
+
+    +------+-----------------------------------------------------------------------------------------------------------------------------+-----------+
+    |userId|title                                                                                                                        |pred_rating|
+    +------+-----------------------------------------------------------------------------------------------------------------------------+-----------+
+    |540   |Dragon Ball Z: The History of Trunks 
+    (Doragon bôru Z: Zetsubô e no hankô!! Nokosareta chô senshi - Gohan to Torankusu) (1993)|5.0        |
+    |540   |On the Beach (1959)                                                                                                          |5.0        |
+    |540   |Frozen River (2008)                                                                                                          |5.0        |
+    |540   |Visitor, The (2007)                                                                                                          |5.0        |
+    |540   |Deathgasm (2015)                                                                                                             |5.0        |
+    +------+-----------------------------------------------------------------------------------------------------------------------------+-----------+
+    only showing top 5 rows
+    
 
 
 **Evaluation  of Recommend 5 movies to 20 distinct users**
 
 The recommendation system was evaluated by recommending 5 movies to 20 distinct users. The results are summarized below:
 
-| **Metric**                     | **Value**           | **Interpretation**                                                                 |
-|---------------------------------|---------------------|-------------------------------------------------------------------------------------|
-| **Root Mean Square Error (RMSE)**| 0.2510              | Predicted ratings deviate from the actual ratings by a small margin (0.25 units).   |
-| **Precision@K (4.5 relevance)** | 0.840               | 84% of the top 5 recommended movies are highly relevant based on a 4.5 threshold.   |
-| **Precision@K (4.0 relevance)** | 0.960               | 96% of the recommended movies are considered relevant based on a 4.0 threshold.     |
+| **Metric**                     | **Value**    | **Interpretation**                                                                 |
+|---------------------------------|-------------|-------------------------------------------------------------------------------------|
+| **Root Mean Square Error (RMSE)**| 0.2510     | Predicted ratings deviate from the actual ratings by a small margin (0.25 units).   |
+| **Precision@K (4.5 relevance)** | 0.840       | 84% of the top 5 recommended movies are highly relevant based on a 4.5 threshold.   |
+| **Precision@K (4.0 relevance)** | 0.960       | 96% of the recommended movies are considered relevant based on a 4.0 threshold.     |
 
 ### Summary
 
@@ -208,24 +214,25 @@ These metrics indicate that the recommendation system is highly effective at pre
     
 # Evaluation: Recommend 5 Distinct Movies to 5 Users
 
-| userId | title                             | pred_rating |
-|--------|-----------------------------------|-------------|
-| 53     | Dracula: Dead and Loving It (1995)| 3.548811    |
-| 558    | Dracula: Dead and Loving It (1995)| 3.3245075   |
-| 327    | Dracula: Dead and Loving It (1995)| 3.2381494   |
-| 371    | Dracula: Dead and Loving It (1995)| 3.0953596   |
-| 276    | Dracula: Dead and Loving It (1995)| 3.0835876   |
-
++------+----------------------------------+-----------+
+|userId|title                             |pred_rating|
++------+----------------------------------+-----------+
+|53    |Dracula: Dead and Loving It (1995)|3.548811   |
+|558   |Dracula: Dead and Loving It (1995)|3.3245075  |
+|327   |Dracula: Dead and Loving It (1995)|3.2381494  |
+|371   |Dracula: Dead and Loving It (1995)|3.0953596  |
+|276   |Dracula: Dead and Loving It (1995)|3.0835876  |
++------+----------------------------------+-----------+
 only showing top 5 rows
 
 
 The recommendation system was tested by recommending 5 distinct movies to 5 users. The results are summarized below:
 
-| **Metric**                     | **Value**           | **Interpretation**                                                                 |
-|---------------------------------|---------------------|-------------------------------------------------------------------------------------|
-| **Root Mean Square Error (RMSE)**| 0.5131              | The RMSE indicates moderate accuracy, with some deviation from actual ratings.       |
-| **Precision@K (4.5 relevance)** | 0.36                | Only 36% of the top 5 recommended movies are considered highly relevant (4.5 threshold). |
-| **Precision@K (4.0 relevance)** | 1.0                 | All recommended movies (100%) are considered relevant with a more lenient 4.0 threshold. |
+| **Metric**                     | **Value** | **Interpretation**                                                                 |
+|---------------------------------|----------|-------------------------------------------------------------------------------------|
+| **Root Mean Square Error (RMSE)**| 0.5131  | The RMSE indicates moderate accuracy, with some deviation from actual ratings.       |
+| **Precision@K (4.5 relevance)** | 0.36     | Only 36% of the top 5 recommended movies are considered highly relevant (4.5 threshold). |
+| **Precision@K (4.0 relevance)** | 1.0      | All recommended movies (100%) are considered relevant with a more lenient 4.0 threshold. |
 
 ### Summary
 
@@ -240,15 +247,21 @@ To offer insights into the model's performance, personalized recommendations wil
 * Recommend 10 movies users 54
 * Precicion@K-evaluates how many of the top  k (10) recommended items are actually relevant to user54
     
-| userId | title                                                                                                                        | genres                    | pred_rating |
-|--------|------------------------------------------------------------------------------------------------------------------------------|---------------------------|-------------|
-| 54     | Dragon Ball Z: The History of Trunks (Doragon bôru Z: Zetsubô e no hankô!! Nokosareta chô senshi - Gohan to Torankusu) (1993) | Action, Adventure, Animation | 4.0924816  |
-| 54     | On the Beach (1959)                                                                                                          | Drama                     | 4.0924816  |
-| 54     | Seve (2014)                                                                                                                  | Documentary, Drama        | 4.00343    |
-| 54     | Deathgasm (2015)                                                                                                             | Comedy, Horror            | 3.9777083  |
-| 54     | Saving Face (2004)                                                                                                           | Comedy, Drama, Romance    | 3.9490638  |
+`
 
-
+    +------+-----------------------------------------------------------------------------------------------------------------------------+--------------------------+-----------+
+    |userId|title                                                                                                                        |genres                    |pred_rating|
+    +------+-----------------------------------------------------------------------------------------------------------------------------+--------------------------+-----------+
+    |54    |Dragon Ball Z: The History of Trunks 
+    (Doragon bôru Z: Zetsubô e no hankô!! Nokosareta chô senshi - Gohan to Torankusu) (1993)|Action|Adventure|Animation|4.0924816  |
+    |54    |On the Beach (1959)                                                                                                          |Drama                     |4.0924816  |
+    |54    |Seve (2014)                                                                                                                  |Documentary|Drama         |4.00343    |
+    |54    |Deathgasm (2015)                                                                                                             |Comedy|Horror             |3.9777083  |
+    |54    |Saving Face (2004)                                                                                                           |Comedy|Drama|Romance      |3.9490638  |
+    +------+-----------------------------------------------------------------------------------------------------------------------------+--------------------------+-----------+
+    only showing top 5 rows
+    
+     
 **Precision@K for user54**
 
 | Relevance Threshold | Precision@K | Interpretation                                                                                   |
