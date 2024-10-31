@@ -16,7 +16,7 @@ The event coordinator needs to provide top 5 personalized movie recommendations 
 # Summary 
 * A movie recommendation system was developed to address the business problem using the MovieLens dataset.  
 * Data exploration revealed a positive bias in ratings and data sparsity due to low user engagement.
-* Model-based collaborative filtering approach using Spark’s MLlib was employed.
+* Model-based collaborative filtering approach using Sparks MLlib was employed.
 * A baseline model was tested with explicit feedback, and a cold-start strategy defined to handle null predictions. 
 * Hyperparameter tuning was conducted using Spark's machine learning pipeline, leveraging ParamGridBuilder and CrossValidator to optimize model performance. 
 * Root Mean Square Error (RMSE) was the primary accuracy metric for model evaluation, with the final model achieving an RMSE of 0.8769 compared to the baseline of 0.8813.
@@ -25,7 +25,7 @@ The event coordinator needs to provide top 5 personalized movie recommendations 
  * Personalized recommendations for individual user were also generated to gain deeper insights. 
 
 # Model-based collaborative filtering 
- Utilize Spark’s MLlib 
+ Utilize Sparks MLlib 
 
  # Evaluation Metrics
  * Root mean square error
@@ -50,6 +50,7 @@ The data distributed indicates a positive ratings of movies  are more common. Th
 
 **Ratings Percentage Distribution**  
 ![png](output_12_0.png)
+
     
 Percentage distribution of ratings skews toward higher ratings, which could be an indication of positive bias.
 * Ratings 4.0 and above: The combined percentage for ratings 4.0, 4.5, and 5.0 is about 48.17%. 4.0 (26.60%),
@@ -180,7 +181,8 @@ To demonstrate that the recommendation system functions recommendations to a dis
     +------+-----------------------------------------------------------------------------------------------------------------------------+-----------+
     |userId|title                                                                                                                        |pred_rating|
     +------+-----------------------------------------------------------------------------------------------------------------------------+-----------+
-    |540   |Dragon Ball Z: The History of Trunks (Doragon bôru Z: Zetsubô e no hankô!! Nokosareta chô senshi - Gohan to Torankusu) (1993)|5.0        |
+    |540   |Dragon Ball Z: The History of Trunks 
+    (Doragon bôru Z: Zetsubô e no hankô!! Nokosareta chô senshi - Gohan to Torankusu) (1993)|5.0        |
     |540   |On the Beach (1959)                                                                                                          |5.0        |
     |540   |Frozen River (2008)                                                                                                          |5.0        |
     |540   |Visitor, The (2007)                                                                                                          |5.0        |
@@ -257,7 +259,8 @@ To offer insights into the model's performance, personalized recommendations wil
     +------+-----------------------------------------------------------------------------------------------------------------------------+--------------------------+-----------+
     |userId|title                                                                                                                        |genres                    |pred_rating|
     +------+-----------------------------------------------------------------------------------------------------------------------------+--------------------------+-----------+
-    |54    |Dragon Ball Z: The History of Trunks (Doragon bôru Z: Zetsubô e no hankô!! Nokosareta chô senshi - Gohan to Torankusu) (1993)|Action|Adventure|Animation|4.0924816  |
+    |54    |Dragon Ball Z: The History of Trunks 
+    (Doragon bôru Z: Zetsubô e no hankô!! Nokosareta chô senshi - Gohan to Torankusu) (1993)|Action|Adventure|Animation|4.0924816  |
     |54    |On the Beach (1959)                                                                                                          |Drama                     |4.0924816  |
     |54    |Seve (2014)                                                                                                                  |Documentary|Drama         |4.00343    |
     |54    |Deathgasm (2015)                                                                                                             |Comedy|Horror             |3.9777083  |
