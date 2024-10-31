@@ -169,13 +169,15 @@ To demonstrate that the recommendation system functions recommendations to a dis
 * Select a random distinct set of users (20)
 * Recommend 5 movies to each user
 * Calculate accuracy and Precicion@K
-| userId | title                                                                                                                        | pred_rating |
-|--------|------------------------------------------------------------------------------------------------------------------------------|-------------|
-| 540    | Dragon Ball Z: The History of Trunks (Doragon bôru Z: Zetsubô e no hankô!! Nokosareta chô senshi - Gohan to Torankusu) (1993) | 5.0         |
-| 540    | On the Beach (1959)                                                                                                          | 5.0         |
-| 540    | Frozen River (2008)                                                                                                          | 5.0         |
-| 540    | Visitor, The (2007)                                                                                                          | 5.0         |
-| 540    | Deathgasm (2015)                                                                                                             | 5.0         |
+* 
+| userId | title                                                                                           | pred_rating |
+|--------|-------------------------------------------------------------------------------------------------|-------------|
+| 540    | Dragon Ball Z: The History of Trunks
+(Doragon bôru Z: Zetsubô e no hankô!! Nokosareta chô senshi - Gohan to Torankusu) (1993)                   | 5.0         |
+| 540    | On the Beach (1959)                                                                             | 5.0         |
+| 540    | Frozen River (2008)                                                                             | 5.0         |
+| 540    | Visitor, The (2007)                                                                             | 5.0         |
+| 540    | Deathgasm (2015)                                                                                | 5.0         |
 
 **Note**: Only showing top 5 rows.
 
