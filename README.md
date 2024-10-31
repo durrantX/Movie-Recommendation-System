@@ -117,16 +117,16 @@ To address the business problem, the recommendation system was designed to:
 
  **Top 5 Recommended Movies for Each Users**
 
-    +------+-----------------------------------------------------------------------------------------------------------------------------+-----------+
-    |userId|title                                                                                                                        |pred_rating|
-    +------+-----------------------------------------------------------------------------------------------------------------------------+-----------+
+    +------+-----------------------------------------------------------------------------------------------------+-----------+
+    |userId|title                                                                                                |pred_rating|
+    +------+-----------------------------------------------------------------------------------------------------+-----------+
     |1     |Dragon Ball Z: The History of Trunks 
-                                               (Doragon bôru Z: Zetsubô e no hankô!! Nokosareta chô senshi - Gohan to Torankusu) (1993)   |5.0        |
-    |1     |On the Beach (1959)                                                                                                          |5.0        |
-    |1     |Seve (2014)                                                                                                                  |5.0        |
-    |1     |Deathgasm (2015)                                                                                                             |5.0        |
-    |1     |Frozen River (2008)                                                                                                          |5.0        |
-    +------+-----------------------------------------------------------------------------------------------------------------------------+-----------+
+             (Doragon bôru Z: Zetsubô e no hankô!! Nokosareta chô senshi - Gohan to Torankusu) (1993)             |5.0        |
+    |1     |On the Beach (1959)                                                                                   |5.0        |
+    |1     |Seve (2014)                                                                                           |5.0        |
+    |1     |Deathgasm (2015)                                                                                      |5.0        |
+    |1     |Frozen River (2008)                                                                                   |5.0        |
+    +------+-------------------------------------------------------------------------------------------------------+-----------+
     only showing top 5 rows
     
     
@@ -177,16 +177,16 @@ To demonstrate that the recommendation system functions recommendations to a dis
 * Calculate accuracy and Precicion@K
 
 
-    +------+-----------------------------------------------------------------------------------------------------------------------------+-----------+
-    |userId|title                                                                                                                        |pred_rating|
-    +------+-----------------------------------------------------------------------------------------------------------------------------+-----------+
+    +------+-------------------------------------------------------------------------------------------+-----------+
+    |userId|title                                                                                      |pred_rating|
+    +------+-------------------------------------------------------------------------------------------+-----------+
     |540   |Dragon Ball Z: The History of Trunks 
     (Doragon bôru Z: Zetsubô e no hankô!! Nokosareta chô senshi - Gohan to Torankusu) (1993)|5.0        |
-    |540   |On the Beach (1959)                                                                                                          |5.0        |
-    |540   |Frozen River (2008)                                                                                                          |5.0        |
-    |540   |Visitor, The (2007)                                                                                                          |5.0        |
-    |540   |Deathgasm (2015)                                                                                                             |5.0        |
-    +------+-----------------------------------------------------------------------------------------------------------------------------+-----------+
+    |540   |On the Beach (1959)                                                                         |5.0        |
+    |540   |Frozen River (2008)                                                                         |5.0        |
+    |540   |Visitor, The (2007)                                                                         |5.0        |
+    |540   |Deathgasm (2015)                                                                            |5.0        |
+    +------+--------------------------------------------------------------------------------------------------------+-----------+
     only showing top 5 rows
     
 
@@ -195,11 +195,11 @@ To demonstrate that the recommendation system functions recommendations to a dis
 
 The recommendation system was evaluated by recommending 5 movies to 20 distinct users. The results are summarized below:
 
-| **Metric**                     | **Value**           | **Interpretation**                                                                 |
-|---------------------------------|---------------------|-------------------------------------------------------------------------------------|
-| **Root Mean Square Error (RMSE)**| 0.2510              | Predicted ratings deviate from the actual ratings by a small margin (0.25 units).   |
-| **Precision@K (4.5 relevance)** | 0.840               | 84% of the top 5 recommended movies are highly relevant based on a 4.5 threshold.   |
-| **Precision@K (4.0 relevance)** | 0.960               | 96% of the recommended movies are considered relevant based on a 4.0 threshold.     |
+| **Metric**                     | **Value**    | **Interpretation**                                                                 |
+|---------------------------------|-------------|-------------------------------------------------------------------------------------|
+| **Root Mean Square Error (RMSE)**| 0.2510     | Predicted ratings deviate from the actual ratings by a small margin (0.25 units).   |
+| **Precision@K (4.5 relevance)** | 0.840       | 84% of the top 5 recommended movies are highly relevant based on a 4.5 threshold.   |
+| **Precision@K (4.0 relevance)** | 0.960       | 96% of the recommended movies are considered relevant based on a 4.0 threshold.     |
 
 ### Summary
 
@@ -234,11 +234,11 @@ only showing top 5 rows
 
 The recommendation system was tested by recommending 5 distinct movies to 5 users. The results are summarized below:
 
-| **Metric**                     | **Value**           | **Interpretation**                                                                 |
-|---------------------------------|---------------------|-------------------------------------------------------------------------------------|
-| **Root Mean Square Error (RMSE)**| 0.5131              | The RMSE indicates moderate accuracy, with some deviation from actual ratings.       |
-| **Precision@K (4.5 relevance)** | 0.36                | Only 36% of the top 5 recommended movies are considered highly relevant (4.5 threshold). |
-| **Precision@K (4.0 relevance)** | 1.0                 | All recommended movies (100%) are considered relevant with a more lenient 4.0 threshold. |
+| **Metric**                     | **Value** | **Interpretation**                                                                 |
+|---------------------------------|----------|-------------------------------------------------------------------------------------|
+| **Root Mean Square Error (RMSE)**| 0.5131  | The RMSE indicates moderate accuracy, with some deviation from actual ratings.       |
+| **Precision@K (4.5 relevance)** | 0.36     | Only 36% of the top 5 recommended movies are considered highly relevant (4.5 threshold). |
+| **Precision@K (4.0 relevance)** | 1.0      | All recommended movies (100%) are considered relevant with a more lenient 4.0 threshold. |
 
 ### Summary
 
