@@ -289,13 +289,19 @@ Incorporate movie metadata to generate more relevant recommendations. Combine co
  Utilize a mix of accuracy metrics(eg. Recall@K) and qualitative metrics (like Diversity, Coverage) to provide a comprehensive evaluation. 
     
 * Recommendations Refinement:
-Derive and incorporate implicit feedback  to better capture user preferences and improve recommendation quality for individual users.
+Feature engineer and incorporate implicit feedback  to better capture user preferences and improve recommendation quality for individual users.
 
 For More Information:
 
 See the full analysis in the Jupyter Notebook or review the presentation.
 
-project_directory
- 
+
+Project_directory
+ ├── Data
+ ├── .gitignore 
+ ├── Movie Recommender System.ipynb
+ ├── Presentation.pptx 
+ └── README.md
+
 
 
