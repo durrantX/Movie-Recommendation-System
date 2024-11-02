@@ -298,9 +298,13 @@ See the full analysis in the Jupyter Notebook or review the presentation.
 
 Project_directory
  ├── Data
+
  ├── .gitignore 
+
  ├── Movie Recommender System.ipynb
+
  ├── Presentation.pptx 
+ 
  └── README.md
 
 
