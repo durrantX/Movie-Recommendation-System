@@ -1,5 +1,7 @@
 ## Final Project Submission
 ## Movie recommendation System
+![image](https://github.com/user-attachments/assets/899a69f4-691b-4201-854c-63389a3e04ad)
+
 
 *  Author: Deon Durrant
 
